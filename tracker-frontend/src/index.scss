@@ -1,0 +1,98 @@
+@import url('./static/fonts/fonts.scss');
+@import './static/scss/vars.scss';
+
+body {
+  font-family: 'YS Display Regular', Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  opacity: 1;
+  // height: 100vh;
+  width: 100%;
+  min-width: 1024px;
+}
+
+.auth-page {
+  opacity: 1;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-image: url(./static/assets/images/image.svg);
+  background-repeat: no-repeat;
+}
+
+.auth-text {
+  color: $color-black-300;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+
+.auth-error {
+  margin: 0;
+  text-align: left;
+  min-height: 21px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.loginForm {
+  width: 100%;
+  padding: 32px 40px 32px 40px;
+  max-width: 386px;
+  background: #fff;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+  h4 {
+    font-family: 'YS Display Medium';
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 0 24px;
+  }
+
+  h3 {
+    font-family: 'YS Text Regular';
+    color: $color-black-500;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.gradecard {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #dde0e4;
+  min-width: 296px;
+  max-width: 592px;
+  width: 100%;
+  min-height: 166px;
+}
+
+.shortgradecard {
+  height: min-content;
+  gap: 32px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #dde0e4;
+  min-width: 296px;
+  max-width: 592px;
+  width: 100%;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 768px;
+}

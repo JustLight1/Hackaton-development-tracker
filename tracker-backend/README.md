@@ -10,16 +10,12 @@
   ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
   ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
   ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-  ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
-  ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
-  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-
+  
 </div>
 
 ## Описание проекта
 
-Проект выпускников _Яндекс.Практикум_ 
+Проект для образовательной платформы Яндекс Практикум.
 
 Этот проект добавляет новый функционал к сервису карьерный трекер. Благодаря этому проекту можно узнать свой текущий уровень навыков и грейд, посмотреть список навыков необходимых для развития, ознакомится с рекомендациями курсов, проектами Мастерской и ресурсами Базы знаний.
 
@@ -31,20 +27,12 @@
 
 ### Технологии
 
-[**Backend**](https://github.com/JustLight1/certificates-and-commendations/tree/main/backend)
+[**Backend**](https://github.com/Hackaton-development-tracker/tracker-backend)
 
 * Python 3.9.10
 * Django 4.2
 * djangorestframework 3.14.0
 * Djoser 2.2
-
-[**Frontend**](https://github.com/JustLight1/certificates-and-commendations/tree/main/frontend)
-
-* CSS BEM
-* HTML
-* React
-* JS
-* TypeScript
 
 ### Инфраструктура: 
 
@@ -53,56 +41,74 @@
 * GUNICORN
 * база даннных POSTGRESQL
 
+### Основные библиотеки:
+
+- аутентификация Djoser
+- документация drf-yasg
+
 ### Запуск проекта:
 
 1. Cклонировать проект:
-
 ```bash
-git clone git@github.com:Hackaton-development-tracker.git
+git clone git@github.com:Hackaton-development-tracker/tracker-backend.git
 ```
 
-2. В корне папки tracker-backend поместить файл .env, заполнить его по шаблону
-
-```env
-ENVIRONMENT=<production OR testing>    # testing use sqlite, pruduction use PostgreSQL
-
-POSTGRES_USER=...
-POSTGRES_PASSWORD=...
-POSTGRES_DB=...
-    
-DB_HOST=...
-DB_PORT=...
-```
-3. Из корневой дирректории tracker-backend запустить сборку приложения:
-
+2. При первом запуске для функционирования проекта обязательно установить виртуальное окружение, установить зависимости, выполнить миграции:
 ```bash
-sudo docker compose up -d
+python -m venv venv
+
+source venv/Scripts/activate
+
+python -m pip install --upgrade pip
 ```
 
-4. Выполнить миграции:
+3. Установите зависимости из файла requirements.txt:
 ```bash
-sudo docker compose exec backend python manage.py makemigrations
-sudo docker compose exec backend python manage.py migrate
+pip install -r requirements.txt
 ```
 
-5. Сбор статики:
+4. Выполните миграции БД. Из папки tracker-backend с файлом manage.py выполните команду:
 ```bash
-sudo docker compose exec backend python manage.py collectstatic
-sudo docker compose exec backend cp -r /app/collected_static/. /backend_static/static/
+python manage.py makemigrations
+python manage.py migrate
 ```
 
-6. Создать суперюзера:
+5. Для создания суперюзера из папки tracker-backend с файлом manage.py выполните команду:
 ```bash
-sudo docker-compose exec backend python manage.py createsuperuser
+python manage.py createsuperuser
 ```
+
+6. Для запуска сервера из папки backend с файлом manage.py выполните команду:
+```bash
+python manage.py runserver
+```
+
+7. Проект будет доступен по адресу `http://localhost:8000/`
+
 
 ### Документация
 
 Доступна после запуска сервиса:
 
-**swagger** - `http://localhost:8000/swagger/`
+**swagger** - `http://localhost:8000/swagger/`  
 **redoc** - `http://localhost:8000/redoc/`
 
 ### Заполнение бд
 Для грейдов обязательные названия **Джуниор**, **Мидл**, **Сеньор**.
 Остальные данные заполняются по своему усмотрению.
+
+## Сервис разрабатывал:
+<details>
+<summary>
+<h4>Backend</h4>
+</summary>
+
+<br>
+
+**Форов Александр** 
+
+[![Telegram Badge](https://img.shields.io/badge/-Light_88-blue?style=social&logo=telegram&link=https://t.me/Light_88)](https://t.me/Light_88) [![Gmail Badge](https://img.shields.io/badge/forov.py@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:forov.py@gmail.com)](mailto:forov.py@gmail.com)
+
+</details>
+
+_[Вверх](#anchor)_

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Вакансии",
+        "url": "/vacancies",
+        "icon": "case",
+        "active": false
+    },
+    {
+        "id": 2,
+        "name": "Мастерская",
+        "url": "/workshop",
+        "icon": "study",
+        "active": false
+    },
+    {
+        "id": 3,
+        "name": "Трекер развития",
+        "url": "/profile",
+        "icon": "grow_up",
+        "active": true
+    },
+    {
+        "id": 4,
+        "name": "Дневник",
+        "url": "/diary",
+        "icon": "book",
+        "active": false
+    },
+    {
+        "id": 5,
+        "name": "Контакты",
+        "url": "/contacts",
+        "icon": "phone",
+        "active": false
+    },
+    {
+        "id": 6,
+        "name": "Лента",
+        "url": "/lenta",
+        "icon": "chat",
+        "active": false
+    }
+]
