@@ -31,14 +31,14 @@
 
 ### Технологии
 
-[**Backend**](https://github.com/JustLight1/certificates-and-commendations/tree/main/backend)
+[**Backend**](https://github.com/JustLight1/Hackaton-development-tracker/tree/main/tracker-backend)
 
 * Python 3.9.10
 * Django 4.2
 * djangorestframework 3.14.0
 * Djoser 2.2
 
-[**Frontend**](https://github.com/JustLight1/certificates-and-commendations/tree/main/frontend)
+[**Frontend**](https://github.com/JustLight1/Hackaton-development-tracker/tree/main/tracker-frontend)
 
 * CSS BEM
 * HTML
@@ -58,7 +58,7 @@
 1. Cклонировать проект:
 
 ```bash
-git clone git@github.com:Hackaton-development-tracker.git
+git clone git@github.com:JustLight1/Hackaton-development-tracker.git
 ```
 
 2. В корне папки tracker-backend поместить файл .env, заполнить его по шаблону

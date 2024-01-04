@@ -50,7 +50,7 @@
 
 1. Cклонировать проект:
 ```bash
-git clone git@github.com:Hackaton-development-tracker/tracker-backend.git
+git clone git@github.com:JustLight1/Hackaton-development-tracker.git
 ```
 
 2. При первом запуске для функционирования проекта обязательно установить виртуальное окружение, установить зависимости, выполнить миграции:
@@ -98,17 +98,10 @@ python manage.py runserver
 Остальные данные заполняются по своему усмотрению.
 
 ## Сервис разрабатывал:
-<details>
-<summary>
-<h4>Backend</h4>
-</summary>
-
-<br>
 
 **Форов Александр** 
 
 [![Telegram Badge](https://img.shields.io/badge/-Light_88-blue?style=social&logo=telegram&link=https://t.me/Light_88)](https://t.me/Light_88) [![Gmail Badge](https://img.shields.io/badge/forov.py@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:forov.py@gmail.com)](mailto:forov.py@gmail.com)
 
-</details>
 
 _[Вверх](#anchor)_
